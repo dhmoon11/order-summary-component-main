@@ -1,0 +1,119 @@
+:root {
+  --Pale: hsl(225, 100%, 94%);
+  --Bright: hsl(245, 75%, 52%);
+  --Very : hsl(225, 100%, 98%);
+  --Desaturated: hsl(224, 23%, 55%);
+  --Dark: hsl(223, 47%, 23%);
+}
+
+* {
+  font-family: 'Red Hat Display';
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 16px;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-color: var(--Pale);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  width: 450px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.illustration-hero-image {
+  height: 220px;
+  background-image: url("./images/illustration-hero.svg");
+}
+
+.main {
+  text-align: center;
+  padding: 2em 2em 2em 2em;
+}
+
+.header h1 {
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+
+.content1 {
+  color: var(--Desaturated);
+  padding: 0px 35px 20px;
+}
+
+.Annual-Plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: var(--Very);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  background-image: url("./images/icon-music.svg");
+}
+
+.content2 {
+  padding-right: 100px;
+}
+
+.content2 p:first-child {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.content2 p:last-child {
+  color: var(--Desaturated);
+}
+
+.Annual-Plan a:hover { 
+  color:#8a2be2;
+}
+
+.btn button:first-child {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  color: var(--Pale);
+  cursor:pointer;
+  border: transparent;
+  border-radius: 10px;
+  background-color: var(--Bright);
+  box-shadow: 1px 10px 10px 5px;
+}
+
+.btn button:last-child {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  color: var(--Desaturated);
+  cursor: pointer;
+  border: transparent;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.btn button:first-child:hover{
+  background-color:  #6c6ce0;
+}
+
+.btn button:last-child:hover{
+  color:black;
+}
